@@ -1,0 +1,23 @@
+{
+    "name": "biera/value-object",
+    "description": "value object implementation",
+    "type": "lib",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jakub Biernacki",
+            "email": "kubiernacki@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpspec/phpspec": "^2.5"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Biera\\" : ["src/"]
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
