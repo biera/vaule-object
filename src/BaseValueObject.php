@@ -3,26 +3,13 @@
 namespace Biera;
 
 /**
- * ImmutableValueObject
+ * BaseValueObject
  *
  * @package Biera
  * @author Jakub Biernacki <kubiernacki@gmail.com>
  */
-abstract class ImmutableValueObject implements ValueObject
+abstract class BaseValueObject implements ValueObject
 {
-    /**
-     * Prevent using __set magic method
-     *
-     * @throws \LogicException
-     *
-     * @param $k
-     * @param $v
-     */
-    final public function __set($k, $v)
-    {
-        throw new \LogicException('Object is immutable and connot be altered.');
-    }
-
     /**
      * {@inheritDoc}
      */

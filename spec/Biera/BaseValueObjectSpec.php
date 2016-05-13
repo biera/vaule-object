@@ -3,9 +3,11 @@
 namespace spec\Biera;
 
 use PhpSpec\ObjectBehavior;
-use Biera\ImmutableValueObject;
 
-class ImmutableValueObjectSpec extends ObjectBehavior
+/**
+ * Specification for \Biera\BaseValueObject
+ */
+class BaseValueObjectSpec extends ObjectBehavior
 {
     function let()
     {
@@ -47,7 +49,7 @@ class ImmutableValueObjectSpec extends ObjectBehavior
 
 }
 
-class Point extends ImmutableValueObject
+class Point extends \Biera\BaseValueObject
 {
     private $x;
 
@@ -60,7 +62,7 @@ class Point extends ImmutableValueObject
     }
 }
 
-class Rectangle extends ImmutableValueObject
+class Rectangle extends \Biera\BaseValueObject
 {
     private $upperLeftCorner;
 
@@ -73,7 +75,7 @@ class Rectangle extends ImmutableValueObject
     }
 }
 
-class Path extends ImmutableValueObject
+class Path extends \Biera\BaseValueObject
 {
     private $points;
 
@@ -87,7 +89,7 @@ class Path extends ImmutableValueObject
     }
 }
 
-class ValueObject extends ImmutableValueObject
+class ValueObject extends \Biera\BaseValueObject
 {
     private $property;
 
